@@ -1,0 +1,10 @@
+
+- if @slideshow_photos.count > 0
+  #gallery
+    %ol
+    - @slideshow_photos.each do |photo|
+      %li
+        %img{:src => photo['url'] }
+- else
+  %p There are no photos for this search. 
+
