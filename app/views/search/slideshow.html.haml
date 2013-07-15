@@ -1,5 +1,7 @@
-
 - if @slideshow_photos.count > 0
+  - content_for :head do
+    - javascript_include_tag 'galleria-1.2.9.min', 'galleria.classic.min', 'slideshow'
+
   #gallery
     %ol
     - @slideshow_photos.each do |photo|
@@ -7,4 +9,3 @@
         %img{:src => photo['url'] }
 - else
   %p There are no photos for this search. 
-

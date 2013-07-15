@@ -13,7 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require head.min
-//= require galleria-1.2.9.min
-//= require galleria.classic.min
-//= require slideshow
-//= require_tree 
